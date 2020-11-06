@@ -26,9 +26,6 @@ set splitright
 set updatetime=50
 set pastetoggle=<C-P>
 
-autocmd InsertEnter * :set norelativenumber
-autocmd InsertLeave * :set relativenumber 
-
 tnoremap jk <C-\><C-n> 
 inoremap jk <ESC>
 
@@ -47,10 +44,21 @@ nnoremap <leader><S-j> :wincmd J<CR>
 nnoremap <leader><S-k> :wincmd K<CR>
 nnoremap <leader><S-l> :wincmd L<CR>
 
-nnoremap <leader>s :vsplit<CR>
 nnoremap <leader>hs :split<CR>
+nnoremap <leader>s :vsplit<CR>
 
-nnoremap <leader>b :buffers<CR>
+" term
+nnoremap <leader>t :term<CR>
+
+" tabs
+nnoremap <leader>to :tabnew<CR> 
+nnoremap <leader>tn :tabnext<CR> 
+nnoremap <leader>tc :tabclose<CR>
+
+" buffers
+nnoremap <leader>bn :bn<CR>
+nnoremap <leader>bp :bp<CR>
+nnoremap <leader>bc :bd<CR>
 
 nnoremap <leader>e :Explore<CR>
 
@@ -70,8 +78,9 @@ Plug 'phanviet/vim-monokai-pro'
 Plug 'flazz/vim-colorschemes'
 Plug 'tomasr/molokai'
 Plug 'chriskempson/base16-vim'
+Plug 'vimwiki/vimwiki'
 
-" Note taking
+" note taking
 Plug 'xolox/vim-notes'
 Plug 'xolox/vim-misc'
 call plug#end()
