@@ -1,4 +1,5 @@
-let g:python3_host_prog = "/home/kendreaditya/miniconda3/bin/python"
+let g:python3_host_prog = "~/miniconda3/bin/python"
+
 syntax on
 set showmatch matchtime=3
 set hlsearch
@@ -8,10 +9,7 @@ set noerrorbells
 set tabstop=4 softtabstop=4
 set shiftwidth=4
 set expandtab
-set smartindent
-set nu
-set nowrap
-set smartcase
+set smartindent set nu set nowrap set smartcase
 set noswapfile
 set nobackup
 set undodir=~/.config/nvim/undodir
